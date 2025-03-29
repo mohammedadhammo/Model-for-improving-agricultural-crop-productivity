@@ -8,7 +8,7 @@ st.set_page_config(page_title="نظام توقع الزراعة", layout="wide")
 # تحميل النموذج المحفوظ
 @st.cache_resource
 def load_model():
-    return joblib.load("/Users/mohammedadham/Desktop/ML Project/filtered_model.pkl")
+    return joblib.load("/Users/mohammedadham/Desktop/Project/filtered_model.pkl")
 
 model = load_model()
 
