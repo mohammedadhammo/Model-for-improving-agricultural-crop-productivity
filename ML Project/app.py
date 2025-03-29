@@ -3,6 +3,26 @@ import numpy as np
 import joblib
 
 
+import os
+import streamlit as st
+
+st.write("🔄 جارٍ التحقق من الحزم...")
+
+try:
+    import joblib
+    st.success("✅ joblib مثبت بالفعل!")
+except ModuleNotFoundError:
+    st.warning("⚠️ joblib غير مثبت، جاري التثبيت...")
+    os.system("pip install joblib")
+    
+    try:
+        import joblib
+        st.success("✅ تم التثبيت بنجاح!")
+    except ModuleNotFoundError:
+        st.error("❌ فشل التثبيت، تحقق من `requirements.txt` وأعد التشغيل.")
+
+
+
 st.set_page_config(page_title="نظام توقع الزراعة", layout="wide")
 
 # تحميل النموذج المحفوظ
