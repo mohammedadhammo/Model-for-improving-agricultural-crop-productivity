@@ -2,16 +2,15 @@ import streamlit as st
 import numpy as np
 import joblib
 
-import pickle
-
-
-
 
 st.set_page_config(page_title="نظام توقع الزراعة", layout="wide")
 
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
+# تحميل النموذج المحفوظ
+@st.cache_resource
+def load_model():
+    return joblib.load("/Users/mohammedadham/Desktop/ML Project/filtered_model.pkl")
 
+model = load_model()
 # 🎨 تحسين واجهة المستخدم بألوان طبيعية فاتحة
 st.markdown("""
     <style>
