@@ -75,7 +75,7 @@ st.markdown('<h1 style="text-align:center;"> نموذج لتحسين إنتاج�
 
 
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
-st.subheader(" أدخل القيم المطلوبة:")
+st.subheader(" قم بإدخال القيم التالية للتنبؤ بإجمالي التوصيلية الكهربائية في المياه ومعدل النتح:")
 
 col1, col2 = st.columns(2)
 with col1:
