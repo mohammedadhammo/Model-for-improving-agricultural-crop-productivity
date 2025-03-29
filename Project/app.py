@@ -71,7 +71,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown('<h1 style="text-align:center;">نموذج لتحسين إنتاجية المحاصيل الزراعية</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="text-align:center;"> نموذج لتحسين إنتاجية المحاصيل  داخل الصُّوَب الزراعية</h1>', unsafe_allow_html=True)
 
 
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
